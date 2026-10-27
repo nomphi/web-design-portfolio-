@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crimson Profile</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --wine: #650d26;
+    --dark-wine: #260711;
+    --red: #a51f42;
+    --soft-red: #d45b78;
+    --text: #f7e9ed;
+    --muted: #b99aa4;
+    --panel: #19070d;
+}
+
+body {
+    min-height: 100vh;
+    background: #100509;
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    padding: 22px 14px;
+}
+
+.container {
+    max-width: 430px;
+    margin: auto;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 25px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #e77b96;
+}
+
+.status {
+    font-size: 10px;
+    color: #d8a6b5;
+    border: 1px solid #592031;
+    border-radius: 20px;
+    padding: 7px 10px;
+}
+
+.profile {
+    border: 1px solid #49202c;
+    background: linear-gradient(150deg, #250b14, #13070b 70%);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.accent {
+    height: 5px;
+    background: linear-gradient(90deg, #570c23, #d04b70, #570c23);
+}
+
+.profile-content {
+    padding: 24px 20px;
+}
+
+.label {
+    font-size: 10px;
+    color: var(--soft-red);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.name {
+    font-size: 34px;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+
+.handle {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.badge {
+    padding: 7px 10px;
+    border-radius: 6px;
+    background: #39101e;
+    border: 1px solid #642039;
+    color: #efb1c2;
+    font-size: 11px;
+}
+
+.divider {
+    height: 1px;
+    background: #45202b;
+    margin: 20px 0;
+}
+
+.section-title {
+    font-size: 11px;
+    color: #d56b88;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.bio {
+    color: #d0b5bd;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.detail {
+    padding: 13px;
+    background: #200a12;
+    border: 1px solid #421827;
+    border-radius: 10px;
+}
+
+.detail span {
+    display: block;
+    color: #aa8290;
+    font-size: 10px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.detail strong {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.interest {
+    border: 1px solid #552032;
+    color: #dca2b2;
+    padding: 8px 11px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+button {
+    padding: 13px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.primary {
+    background: #76152f;
+    color: white;
+    border: 1px solid #a52b4c;
+}
+
+.secondary {
+    background: transparent;
+    color: #d7a2b1;
+    border: 1px solid #592333;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+.footer {
+    text-align: center;
+    color: #78505c;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding: 22px 0 8px;
+}
+
+#message {
+    text-align: center;
+    font-size: 12px;
+    color: #e88ca5;
+    margin-top: 13px;
+    min-height: 15px;
+}
+
+@media (max-width: 350px) {
+    .name {
+        font-size: 28px;
+    }
+
+    .profile-content {
+        padding: 20px 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <header class="topbar">
+        <div class="logo">CRIMSON.</div>
+        <div class="status">● PROFILE CONCEPT</div>
+    </header>
+
+    <main class="profile">
+        <div class="accent"></div>
+
+        <div class="profile-content">
+
+            <div class="label">Member profile / 001</div>
+
+            <h1 class="name">Your Name</h1>
+            <p class="handle">@yourusername</p>
+
+            <div class="badges">
+                <span class="badge">✦ Member</span>
+                <span class="badge">◆ Online</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <h2 class="section-title">About me</h2>
+            <p class="bio">
+                Just another soul with their own little world.
+                Add your personality, tell your story, and make
+                this space yours.
+            </p>
+
+            <div class="divider"></div>
+
+            <h2 class="section-title">Personal details</h2>
+
+            <div class="details">
+                <div class="detail">
+                    <span>Age</span>
+                    <strong>Not specified</strong>
+                </div>
+
+                <div class="detail">
+                    <span>Gender</span>
+                    <strong>Not specified</strong>
+                </div>
+
+                <div class="detail">
+                    <span>Location</span>
+                    <strong>Unknown</strong>
+                </div>
+
+                <div class="detail">
+                    <span>Joined</span>
+                    <strong>Recently</strong>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <h2 class="section-title">Interests</h2>
+
+            <div class="interests">
+                <span class="interest">Gaming</span>
+                <span class="interest">Music</span>
+                <span class="interest">Anime</span>
+                <span class="interest">Late nights</span>
+            </div>
+
+            <div class="actions">
+                <button class="primary" onclick="follow()">＋ Follow</button>
+                <button class="secondary" onclick="message()">✉ Message</button>
+            </div>
+
+            <div id="message"></div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        A CRIMSON DESIGN CONCEPT · 2026
+    </footer>
+
+</div>
+
+<script>
+let following = false;
+
+function follow() {
+    following = !following;
+
+    const button = document.querySelector(".primary");
+    button.textContent = following ? "✓ Following" : "＋ Follow";
+
+    document.getElementById("message").textContent =
+        following ? "You're now following this profile." : "You unfollowed this profile.";
+}
+
+function message() {
+    document.getElementById("message").textContent =
+        "🥺 It's just a sample, loser!";
+}
+</script>
+
+</body>
+</html>
